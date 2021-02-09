@@ -7,8 +7,13 @@ into the {body} of the default.hbs template --}}
 <section>
 
     <header class="main content">
-        <span class="date">{{date format="MMMM D, YYYY"}}</span>
         <h1>{{title}}</h1>
+        <span class="post-meta">
+            {{t "Posted"}}
+            {{#primary_tag}}{{t "in"}} <a class="post-meta-tag" href="{{url}}">{{name}}</a>{{/primary_tag}}
+            {{t "on"}}
+            <time datetime="{{date format='MM-DD-YYYY'}}">{{date format="MMM DD YYYY"}}</time>
+		</span>
         {{#if custom_excerpt}}
             <p class="content">{{custom_excerpt}}</p>
         {{/if}}

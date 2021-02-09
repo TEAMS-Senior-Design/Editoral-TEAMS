@@ -30,12 +30,12 @@
     }
 
     #sidebar:not(.inactive) .toggle:after {
-        background: #f56a6a;
+        background: #800;
     }
 }
 
 #banner {
-    border-bottom: solid 2px rgba(210, 215, 217, 0.75);
+    border-bottom: solid 2px_palette(border);
 }
 
 
@@ -55,7 +55,7 @@
     align-items: center;
     width: 100%;
     padding: 3rem 0;
-    border-top: solid 2px rgba(210, 215, 217, 0.75);
+    border-top: solid 2px _palette(border);
 }
 
 
@@ -77,7 +77,7 @@
     flex-direction: column;
     align-items: center;
     padding: 4em 0 3em 0;
-    border-bottom: solid 2px rgba(210, 215, 217, 0.75);
+    border-bottom: solid 2px_palette(border);
     text-align: center;
 
 }
@@ -180,7 +180,10 @@
 }
 
 .kg-image {
-    max-width: 100%;
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 // Content
@@ -188,7 +191,10 @@
 
 // Markdown images and videos
 .content p > img, .content p > video {
-    max-width: 100%;
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .kg-card {
@@ -352,7 +358,7 @@
 }
 
 .kg-bookmark-container:hover .kg-bookmark-title {
-    color: #f56a6a;
+    color: #800;
 }
 
 .kg-bookmark-description {

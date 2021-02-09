@@ -52,6 +52,10 @@
 			font-size: (1.25em / 0.9);
 		}
 
+		img {
+			width: _size(sidebar-width) / 1.375;
+		}
+
 		> .inner {
 			@include padding($pad, $pad, (0, 0, $pad, 0));
 			position: relative;
