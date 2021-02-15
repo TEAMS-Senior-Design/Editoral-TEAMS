@@ -10,7 +10,7 @@
     padding: 0;
     border: none;
     display: inline-flex;
-    height: 28px;
+    height: 57px;
 
     @include breakpoint('<=small') {
         display: flex;
@@ -20,7 +20,7 @@
 }
 
 #header .logo.image img {
-    height: 28px;
+    height: 57px;
     transform: none !important;
 }
 
@@ -184,6 +184,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: 0.3em solid _palette(fg);
 }
 
 // Content
@@ -209,7 +210,11 @@
 }
 
 .kg-image {
-    width: 100%;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.3em solid _palette(fg);
 }
 
 .kg-card figcaption {
