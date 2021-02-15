@@ -64,6 +64,7 @@
 				max-height: 50vh;
 				min-height: 18em;
 				width: 100%;
+				border: 0.3em solid _palette(fg);
 			}
 
 			@include breakpoint('<=xsmall') {

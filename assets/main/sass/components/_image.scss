@@ -8,7 +8,6 @@
 
 	.image {
 		border-radius: _size(border-radius);
-		border: 0;
 		display: inline-block;
 		position: relative;
 
@@ -48,6 +47,7 @@
 				display: block;
 				margin-left: auto;
 				margin-right: auto;
+				border: 0.3em solid _palette(fg);
 			}
 		}
 
@@ -61,6 +61,7 @@
 				display: block;
 				margin-left: auto;
 				margin-right: auto;
+				border: 0.3em solid _palette(fg);
 			}
 		}
 	}
